@@ -1,5 +1,12 @@
+import jsonPlaceHolder from "../apis/jsonPlaceHolder";
+
 export const fetchPosts = () => {
-  return {
-    type: "FETCH_POSTS",
+  return function (dispatch, getState) {
+    const response = jsonPlaceHolder.get("/posts");
+
+    return {
+      type: "FETCH_POSTS",
+      payload: response,
+    };
   };
 };
