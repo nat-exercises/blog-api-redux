@@ -13,7 +13,9 @@ Learning redux and react thunk
 ## Dependencies
 
 * redux
-* re
+* redux thunk
+* lodash
+* axios
 
 ## API
 
